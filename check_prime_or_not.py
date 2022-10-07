@@ -1,19 +1,13 @@
-n = input("Please enter a number:")
-is_prime(n)
-
-def is_prime(a):
-    x = True 
-    for i in (2, a):
-            while x:
-               if a%i == 0:
-                   x = False
-               else:
-                   x = True
-
-
-    if x:
-        print "prime"
-    else:
-        print "not prime"
-
-main()
+def Prime(a):  
+    if a > 1:  
+        for j in range(2, int(a/2) + 1):  
+            if (a % j) == 0:  
+                print(a, "is not a prime number")  
+                break  
+        else:  
+            print(a, "is a prime number")  
+  
+    else:  
+        print(a, "is not a prime number")  
+a = int(input("Enter an input number:"))  
+Prime(a)  
